@@ -1,0 +1,10 @@
+{
+  "name": "lumina-ui-components",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modern frontend UI library for enterprise applications.",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Building static web assets...'"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "functions": {
+    "api/gateway.js": {
+      "memory": 128,
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/ui-assets/sync/:path*",
+      "destination": "/api/gateway"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
