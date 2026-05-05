@@ -8,7 +8,7 @@
   },
   "rewrites": [
     {
-      "source": "/api/ui-assets/sync/:path*",
+      "source": "/api/:path*",
       "destination": "/api/gateway"
     },
     {
