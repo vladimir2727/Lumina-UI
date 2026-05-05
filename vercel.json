@@ -3,17 +3,18 @@
   "functions": {
     "api/gateway.js": {
       "memory": 128,
-      "maxDuration": 30
+      "maxDuration": 60
     }
   },
   "rewrites": [
     {
-      "source": "/api/:path*",
+      "source": "/my-sync(.*)",
       "destination": "/api/gateway"
     },
     {
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ]
+  ],
+  "trailingSlash": false
 }
